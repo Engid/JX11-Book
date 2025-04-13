@@ -1,32 +1,23 @@
 cmake_minimum_required(VERSION 3.22)
 
 # Version is needed by JUCE.
-project(AudioPlugin VERSION 0.1.0)
+project(JX11Book VERSION 0.1.0)
 
 # Adding a directory with the library/application name as a subfolder of the
 # include folder is a good practice. It helps avoid name clashes later on.
-set(INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/YourPluginName")
+set(INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/JX11Book")
 
 # Adds a plugin target (that's basically what the Projucer does).
 juce_add_plugin(
   ${PROJECT_NAME}
-  COMPANY_NAME
-  "MyCompany" # change this
-  IS_SYNTH
-  FALSE # may change this
-  NEEDS_MIDI_INPUT
-  FALSE # may change this
-  NEEDS_MIDI_OUTPUT
-  FALSE # may change this
-  PLUGIN_MANUFACTURER_CODE
-  Mcmp # change this (for max compatibility, first letter must be uppercase, remaining lowercase)
-  PLUGIN_CODE
-  Expl # change this (for max compatibility, first letter must be uppercase, remaining lowercase)
-  FORMATS
-  Standalone
-  VST3 # may change this
-  PRODUCT_NAME
-  "YourPluginName" # change this
+  COMPANY_NAME "FiveLimit" # change this
+  IS_SYNTH TRUE # may change this
+  NEEDS_MIDI_INPUT TRUE # may change this
+  NEEDS_MIDI_OUTPUT FALSE # may change this
+  PLUGIN_MANUFACTURER_CODE Nzgg # change this (for max compatibility, first letter must be uppercase, remaining lowercase)
+  PLUGIN_CODE JX11 # change this (for max compatibility, first letter must be uppercase, remaining lowercase)
+  FORMATS Standalone VST3 # may change this
+  PRODUCT_NAME "JX11" # change this
 )
 
 # Sets the source files of the plugin project.

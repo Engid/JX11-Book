@@ -1,5 +1,5 @@
-#include "YourPluginName/PluginProcessor.h"
-#include "YourPluginName/PluginEditor.h"
+#include "JX11Book/PluginProcessor.h"
+#include "JX11Book/PluginEditor.h"
 
 namespace audio_plugin {
 AudioPluginAudioProcessor::AudioPluginAudioProcessor()
