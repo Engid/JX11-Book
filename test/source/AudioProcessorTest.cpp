@@ -3,6 +3,6 @@
 
 namespace audio_plugin_test {
 TEST(AudioProcessor, Foo) {
-  audio_plugin::AudioPluginAudioProcessor processor{};
+  audio_plugin::JX11AudioProcessor processor{};
 }
 }  // namespace audio_plugin_test
